@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "releasedAt": "2026-10-23",
+  "notes": "首个对外发布版本：整屏自定义 Windows 桌面壳，桌宠保罗乔治、音乐条、热补丁更新。",
+
+  "minRuntime": "1.0.0",
+  "forceFullUpdate": false,
+
+  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.0/MahjongDesktop-Setup-1.0.0.exe",
+
+  "packageUrl": "",
+  "sha256": "",
+  "size": 0,
+
+  "_发新版怎么改": {
+    "热补丁（只改界面资源）": [
+      "1. npm run patch 1.0.1 \"更新说明\" —— 会算好 zip 的 sha256 和字节数，直接生成 patch-output/version.json",
+      "2. zip 传到 Release 资产，packageUrl 用那个直链（build-patch.js 有 发布配置.json 时会自动填）",
+      "3. 用 patch-output/version.json 覆盖本文件，推上去。别手抄 sha256。"
+    ],
+    "整包（改了 main.js / preload.js / package.json）": [
+      "1. package.json 改版本号 → npm run dist → 新 exe 传 Release 资产",
+      "2. downloadUrl 换新直链，forceFullUpdate 设 true（校验值写在 Release 正文里，安装包本身不校验它）",
+      "3. 补丁白名单不含这三个文件，热补丁塞进去也会被拒装 —— 这一步没法绕"
+    ],
+    "三条红线": [
+      "sha256 留空 = 客户端拒装，等于没发。宁可发错版本号，也别发一份没哈希的清单。",
+      "本文件的 raw 地址已经写死在安装包里（main-modules/updater.js 的 DEFAULT_MANIFEST_URL）。换仓库、改名、换托管，已装包的人就再也收不到更新，只能重装。",
+      "先传资产、再改本文件。反过来会让玩家拉到一份下不动的清单。"
+    ]
+  }
+}

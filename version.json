@@ -1,12 +1,12 @@
 {
-  "version": "1.0.0",
-  "releasedAt": "2026-10-23",
-  "notes": "首个对外发布版本：整屏自定义 Windows 桌面壳，桌宠保罗乔治、音乐条、热补丁更新。",
+  "version": "1.0.1",
+  "releasedAt": "2026-10-25",
+  "notes": "新桌宠麻薯；「开始」按钮不再依赖开发机上的 Python；首运行导入你自己的桌面、出厂壁纸随包；文件夹图标现场取真图；音乐条整个撤掉（本机播放内容不再联网查询）。",
 
-  "minRuntime": "1.0.0",
-  "forceFullUpdate": false,
+  "minRuntime": "1.0.1",
+  "forceFullUpdate": true,
 
-  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.0/MahjongDesktop-Setup-1.0.0.exe",
+  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.1/MahjongDesktop-Setup-1.0.1.exe",
 
   "packageUrl": "",
   "sha256": "",

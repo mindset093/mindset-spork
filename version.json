@@ -1,12 +1,12 @@
 {
-  "version": "1.0.1",
+  "version": "1.0.2",
   "releasedAt": "2026-10-25",
-  "notes": "新桌宠麻薯；「开始」按钮不再依赖开发机上的 Python；首运行导入你自己的桌面、出厂壁纸随包；文件夹图标现场取真图；音乐条整个撤掉（本机播放内容不再联网查询）。",
+  "notes": "音乐条整个撤掉（本机播放内容不再联网查询）；文件夹图标改成现场问系统外壳取真图；「开始」按钮不再依赖开发机上的 Python；首运行导入你自己的桌面、出厂壁纸随包；新桌宠麻薯。1.0.2 在这之上只修了随包的使用说明（它不再自称是哪一版），功能与 1.0.1 一致。",
 
-  "minRuntime": "1.0.1",
+  "minRuntime": "1.0.2",
   "forceFullUpdate": true,
 
-  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.1/MahjongDesktop-Setup-1.0.1.exe",
+  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.2/MahjongDesktop-Setup-1.0.2.exe",
 
   "packageUrl": "",
   "sha256": "",
@@ -14,7 +14,7 @@
 
   "_发新版怎么改": {
     "热补丁（只改界面资源）": [
-      "1. npm run patch 1.0.1 \"更新说明\" —— 会算好 zip 的 sha256 和字节数，直接生成 patch-output/version.json",
+      "1. npm run patch <版本号> \"更新说明\"（跟 package.json 里那个一致）—— 会算好 zip 的 sha256 和字节数，直接生成 patch-output/version.json",
       "2. zip 传到 Release 资产，packageUrl 用那个直链（build-patch.js 有 发布配置.json 时会自动填）",
       "3. 用 patch-output/version.json 覆盖本文件，推上去。别手抄 sha256。"
     ],

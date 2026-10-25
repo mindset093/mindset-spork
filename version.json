@@ -1,12 +1,12 @@
 {
-  "version": "1.0.2",
+  "version": "1.0.3",
   "releasedAt": "2026-10-25",
-  "notes": "音乐条整个撤掉（本机播放内容不再联网查询）；文件夹图标改成现场问系统外壳取真图；「开始」按钮不再依赖开发机上的 Python；首运行导入你自己的桌面、出厂壁纸随包；新桌宠麻薯。1.0.2 在这之上只修了随包的使用说明（它不再自称是哪一版），功能与 1.0.1 一致。",
+  "notes": "这一版只动「更新链路」和「出错时怎么说清楚」，桌面本身的行为没改：拉清单换条连接最多再试两次，不再断一次就哑一整天；更新通道只认 https（本机 127.0.0.1 例外）；问题反馈里带上更新链路的现场；首次运行标记固定到 %APPDATA%\\麻将桌面，换个入口不再把老用户当新人重弹三步向导。装 1.0.2 的人要重装 —— 改的是主进程代码，热补丁白名单覆盖不到它。",
 
-  "minRuntime": "1.0.2",
+  "minRuntime": "1.0.3",
   "forceFullUpdate": true,
 
-  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.2/MahjongDesktop-Setup-1.0.2.exe",
+  "downloadUrl": "https://github.com/mindset093/mindset-spork/releases/download/v1.0.3/MahjongDesktop-Setup-1.0.3.exe",
 
   "packageUrl": "",
   "sha256": "",
